@@ -1,21 +1,14 @@
 package test.java.org.example;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.Socket;
 
-import org.example.stubs.TestInputStream;
-import org.example.stubs.TestOutputStream;
-import org.junit.Test;
 
 public class EchoServiceTest {
-    /**
-     * Rigorous Test :-)
-     */
+
     @Test
     public void givenValidRequestAndResponse_whenEcho_thenTrueIsResponded() throws IOException
     {
