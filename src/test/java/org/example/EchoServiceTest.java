@@ -1,10 +1,17 @@
 package test.java.org.example;
 
 
+import main.java.org.example.EchoService;
+import org.junit.jupiter.api.Test;
+import test.java.org.example.stubs.TestInputStream;
+import test.java.org.example.stubs.TestOutputStream;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class EchoServiceTest {

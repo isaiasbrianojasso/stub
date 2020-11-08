@@ -22,7 +22,7 @@ public class EchoService {
         return false;        
     }
 
-    boolean sendEchoMessage (String request, OutputStream os, InputStream is) throws IOException {
+    public boolean sendEchoMessage(String request, OutputStream os, InputStream is) throws IOException {
         os.write(request.getBytes());
         String response = new String(is.readAllBytes());
         
